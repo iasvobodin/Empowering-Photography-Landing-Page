@@ -1,5 +1,5 @@
 <script>
-	const galleryItems = [
+	const galleryItems = $state([
 		'Портрет девушки\nестественная улыбка',
 		'Задумчивый взгляд\nу окна',
 		'Смех на улице\nживые эмоции',
@@ -10,10 +10,11 @@
 		'Солнечный день\nискренняя радость',
 		'В кафе\nобычный момент',
 		'Вечерний свет\nмягкие тени'
-	];
+	]);
 
-	let galleryHeader, galleryCaption;
-	let galleryElements = [];
+	let galleryHeader = $state();
+	let galleryCaption = $state();
+	let galleryElements = $state([]);
 </script>
 
 <section class="gallery">

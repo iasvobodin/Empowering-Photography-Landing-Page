@@ -1,5 +1,5 @@
 <script>
-	const packages = [
+	const packages = $state([
 		{
 			title: 'Мини-сессия',
 			features: ['1 час', '10 обработанных фото', 'Онлайн-гид по подготовке'],
@@ -10,10 +10,10 @@
 			features: ['2–2.5 часа', '25+ фото', 'Визуальный референс', 'Помощь с образом'],
 			price: '11 000 ₽'
 		}
-	];
+	]);
 
-	let packagesHeader;
-	let packageElements = [];
+	let packagesHeader = $state();
+	let packageElements = $state([]);
 
 	function scrollToContact() {
 		const contactElement = document.getElementById('contact');
@@ -47,7 +47,7 @@
 					</div>
 					<div class="package-footer">
 						<div class="package-price">{pkg.price}</div>
-						<button class="cta-button" on:click={scrollToContact}> Выбрать </button>
+						<button class="cta-button" onclick={scrollToContact}> Выбрать </button>
 					</div>
 				</div>
 			{/each}

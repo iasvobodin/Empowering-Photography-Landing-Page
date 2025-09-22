@@ -1,5 +1,5 @@
 <script>
-	const testimonials = [
+	const testimonials = $state([
 		{
 			text: '«Я боялась камеры. А потом увидела фото и подумала: вау, неужели это я?»',
 			author: '— Аня, 24'
@@ -12,10 +12,10 @@
 			text: '«Я увидела в себе женщину. Не маму. Не сотрудницу. Женщину. Спасибо»',
 			author: '— Катя, 30'
 		}
-	];
+	]);
 
-	let testimonialsHeader;
-	let testimonialElements = [];
+	let testimonialsHeader = $state();
+	let testimonialElements = $state([]);
 </script>
 
 <section class="testimonials">

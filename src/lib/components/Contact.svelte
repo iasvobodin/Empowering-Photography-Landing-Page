@@ -1,8 +1,11 @@
 <script>
-	let contactHeader, contactForm, contactNote;
-	let name = '';
-	let contact = '';
-	let message = '';
+	let contactHeader = $state();
+	let contactForm = $state();
+	let contactNote = $state();
+
+	let name = $state('');
+	let contact = $state('');
+	let message = $state('');
 
 	function handleSubmit(event) {
 		event.preventDefault();
@@ -19,7 +22,7 @@
 		<h2 bind:this={contactHeader} class="section-header animate-fade-up">
 			<span class="gradient-wrapper">Хочешь обсудить съёмку? Напиши мне</span>
 		</h2>
-		<form bind:this={contactForm} class="contact-form animate-fade-up" on:submit={handleSubmit}>
+		<form bind:this={contactForm} class="contact-form animate-fade-up" onsubmit={handleSubmit}>
 			<div class="form-group">
 				<input type="text" placeholder="Имя" bind:value={name} required />
 			</div>

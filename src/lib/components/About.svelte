@@ -1,6 +1,14 @@
 <script>
-	let aboutTitle, aboutText1, aboutText2, aboutText3, aboutImage;
-	let mobileTitle, mobileText1, mobileText2, mobileText3, mobileImage;
+	let aboutTitle = $state();
+	let aboutText1 = $state();
+	let aboutText2 = $state();
+	let aboutText3 = $state();
+	let aboutImage = $state();
+	let mobileTitle = $state();
+	let mobileText1 = $state();
+	let mobileText2 = $state();
+	let mobileText3 = $state();
+	let mobileImage = $state();
 </script>
 
 <section class="about">
